@@ -21,7 +21,7 @@ from vilya.views.teams import TeamsUI
 _q_exports = ['teams', 'create', 'future', 'notification', 'my_pull_requests',
               'remove', 'watch', 'unwatch', 'yours', 'my_issues',
               'public_timeline', 'search', 'emoji', 'bo', 'team',
-              'add_team', 'beacon', 'shop', 'stat', 'chat', 'center']
+              'add_team', 'beacon', 'stat', 'chat', 'center']
 
 
 def bo(request):
