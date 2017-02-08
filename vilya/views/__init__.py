@@ -26,7 +26,6 @@ from vilya.views.uis.issue import IssueBoardUI, IssueCommentUI
 from vilya.views.uis.settings import SettingsUI
 from vilya.views.uis.archive import ArchiveUI
 from vilya.views.util import jsonize
-from vilya.views.fair import FairUI
 from vilya.views.hub.search_beta import SrcIndexUI, SearchUI
 from vilya.models.feed import get_user_inbox, PAGE_ACTIONS_COUNT
 from vilya.models.team import Team
@@ -108,8 +107,6 @@ def _q_index(request):
 def _q_lookup(request, name):
     if name == 'static':
         return StaticUI(request)
-    if name == 'fair':
-        return FairUI(request)
     if CodeDoubanProject.exists(name):
         return CodeUI(name)
     if User.check_exist(name):
